@@ -214,6 +214,9 @@
     <!-- Statements of Fact are statements that express specific behavior, such as observations or beliefs, 
          in terms of syntactic components (e.g., ABIC, PFEC) of institutional statements, generally omitting
          Deontic and Or else components -->
+    
+    <element name="StatementOfFact" type="tns:StatementOfFact"></element>
+    
     <complexType name="StatementOfFact">
         <sequence>
             <element name="Inversion" type="boolean"></element>
@@ -226,6 +229,9 @@
     </complexType>
     
     <!-- Institutional Expressions are an abstraction capturing both institutional statements and statements of fact -->
+    
+    <element name="InstitutionalExpression" type="tns:InstitutionalExpression"></element>
+    
     <complexType name="InstitutionalExpression">
         <choice>
             <element name="InstitutionalStatement" type="tns:InstitutionalStatement"></element>
@@ -234,6 +240,9 @@
     </complexType>
     
     <!-- Institutional Statements can both be of regulative and constitutive type (or combinations of either) -->
+    
+    <element name="InstitutionalStatement" type="tns:InstitutionalStatement"></element>
+    
     <complexType name="InstitutionalStatement">
         <sequence>
             <element name="Inversion" type="boolean"></element>
